@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="images/map.png" class="map">
+    <div class="country uk" onclick="init('uk')">ウクライナ</div>
+    <div class="country tr" onclick="init('tr')">トルコ</div>
+    <div class="country id" onclick="init('id')">インドネシア</div>
+
+    <div class="conIm ukc" style="background: url(images/olivie.jpg) center 20%/ cover no-repeat; display: none;">
+        <div class="countryName u">ウクライナ</div>
+    </div>
+    <div class="conIm trc" style="background: url(images/choban.jpeg) center 20%/ cover no-repeat; display: none;">
+        <div class="countryName t">トルコ</div>
+    </div>
+    <div class="conIm idc" style="background: url(images/rojak.jpeg) center 20%/ cover no-repeat; display: none;">
+        <div class="countryName i">インドネシア</div>
+    </div>
+
+    <div id="mainFrame" style="display: none;">
+
+        <div id="close" onclick="cls()"></div>
+        <div id="navigation">
+            <div class="left nav" onclick="move(this)"></div>
+            <div class="right nav" onclick="move(this)"></div>
+        </div>
+
+        <div id="frame">
+            <div id="back"></div>
+            <div id="fotos">
+                <div class="imgView" style="width: 100%; height: 100%; background: url(images/olivie.jpg) center center / cover no-repeat;"></div>
+            </div>
+            <div id="counter">
+                <div class="count" style="background: var(--blue);"></div>
+                <div class="count"></div>
+                <div class="count"></div>
+            </div>
+        </div>
+
+        <div id="frameTask" style="display: none;">
+            <div id="flag" style="background: url(images/uk.png);"></div>
+            <div id="title">オリヴィエ</div>
+            <div id="menu"></div>
+            <div class="sore">それもいい</div>
+            <div id="soremo"></div>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
