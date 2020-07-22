@@ -207,4 +207,8 @@ function cls() {
         document.querySelector('.idc').style.display = 'block';
     }
     count = 0;
+    for(let i = 0; i < counter.children.length; i++) {
+        counter.children[i].style.background = 'transparent';
+    }
+    counter.children[0].style.background = 'var(--blue)';
 };
